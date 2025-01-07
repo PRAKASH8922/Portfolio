@@ -57,3 +57,24 @@ portfolioLists.forEach((list, idx)=>{
 setTimeout(()=>{
     sections[4].classList.remove('active');
 },1500);
+
+// Initialize EmailJS
+emailjs.init("2Bsqn1r2m7Fbl04Co"); // Replace with your actual public key
+
+// Select the form using the class name
+//const form = document.querySelector(".contact-form");
+const form = document.getElementById('contact-form');
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from reloading the page
+
+    // Send form data using EmailJS
+    emailjs.sendForm('service_f34yowf', 'template_4xjakv6', form)
+        .then(function (response) {
+            alert("Message sent successfully!");
+            form.reset(); // Clear the form fields after success
+        }, function (error) {
+            alert("Failed to send message. Please try again.");
+            console.error("EmailJS error:", error);
+        });
+});
