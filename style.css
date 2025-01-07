@@ -613,7 +613,7 @@ a:hover .tooltip,
 }
 
 /*  BREAKPOINTS */
-/* @media screen and (max-width:1200px) {
+@media screen and (max-width:1200px) {
     html{
         font-size: 55%;
     }
@@ -732,4 +732,4 @@ a:hover .tooltip,
     .tab-list h3{
         font-size: 2.3rem;
     }
-} */
+}
