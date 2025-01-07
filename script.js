@@ -59,7 +59,7 @@ setTimeout(()=>{
 },1500);
 
 // Initialize EmailJS
-emailjs.init("6Y7yMDTb9ucDogH0j"); // Replace with your actual public key
+emailjs.init("m-dokqhPUQxNrWsLX"); // Replace with your actual public key
 
 // Select the form using the class name
 //const form = document.querySelector(".contact-form");
